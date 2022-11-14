@@ -99,6 +99,9 @@ section {
 
 .header {
     border-bottom: 1px solid #ECECEC;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-container {
@@ -165,7 +168,8 @@ section {
     font-size: 14px;
     line-height: 1.1429;
     letter-spacing: 0.02em;
-    color: #757575;
+    /* color: #757575; */
+    padding-left: 10px;
 }
 
 .header-contact-mail,
@@ -174,8 +178,22 @@ section {
     padding-bottom: 32px;
 }
 
+.header-mail {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
 .header-tel {
     margin-left: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-contact-mail,
+.header-contact-tel {
+    color: #757575;
 }
 
 .header-contact-mail:hover,
@@ -188,13 +206,32 @@ section {
     color: #2196F3;
 }
 
+.header-contact-mail:hover .header-mail-icon {
+    fill: currentColor;
+}
+
+.header-contact-tel:hover .header-tel-icon {
+    fill: currentColor;
+}
+
+.header-mail-icon,
+.header-tel-icon {
+    margin-right: 10px;
+}
+
 /* -----------------------HERO----------------------- */
 
 .hero {
     display: flex;
     padding-top: 200px;
     padding-bottom: 200px;
-    background: #2F303A;
+    /* background: #2F303A; */
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-container {
@@ -202,7 +239,6 @@ section {
 }
 
 .hero-title {
-
     font-size: 44px;
     line-height: 1.3636;
     text-align: center;
@@ -241,6 +277,22 @@ section {
     line-height: 1.1666;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
+}
+
+.spacial-list-picture {
+    background: #F5F4FA;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.spacial-list-icon {
+    width: 70px;
+    height: 70px;
 }
 
 .spacial-uptitle {
@@ -284,6 +336,9 @@ section {
 
 .team {
     background: #F5F4FA;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .team-title {
@@ -296,11 +351,16 @@ section {
     gap: 30px;
 }
 
+.team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-back {
     width: 270px;
     background: #FFFFFF;
     padding-top: 30px;
-    padding-bottom: 30px;
+    /* padding-bottom: 16px; */
     /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px; */
 }
@@ -324,6 +384,93 @@ section {
     color: var(--text-color);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* margin-bottom: 30px; */
+    padding-bottom: 30px;
+}
+
+.team-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    /* background-color: #FFFFFF; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: #2196F3;
+}
+
+.team-soc-icon {
+    fill: #AFB1B8;
+}
+
+.team-soc-link:hover .team-soc-icon {
+    fill: #FFFFFF;
+}
+
+
+
+/* ------------------------CLIENT--------------------------- */
+
+.client {}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.client-title {
+    text-align: center;
+}
+
+.client-list {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+
+}
+
+.client-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    /* padding: 16px 32px; */
+}
+
+.client-item-link:hover {
+    /* fill: #2196F3; */
+    border-color: #2196F3;
+}
+
+.client-item-link:hover .client-icon {
+    /* fill: #2196F3; */
+    fill: currentColor;
+}
+
+
+.link {}
+
+.client-icon {
+    width: 106px;
+    height: 50px;
 }
 
 /* ------------------------FOOTER--------------------------- */
@@ -332,6 +479,9 @@ section {
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contacts-address {
@@ -342,7 +492,7 @@ section {
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    display: flex;
+    /* display: flex; */
 }
 
 .contacts-item:not(:last-child) {
@@ -366,6 +516,55 @@ section {
     color: #2196F3;
 }
 
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-soc-container {
+    margin-left: 70px;
+}
+
+.footer-title {
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-soc-list {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: #2196F3;
+}
+
+
+.footer-soc-icon {
+    fill: #ffffff;
+}
+
 /* -----------------------PORTFOLIO NAVIGATION--------------------- */
 
 .nav-container {
@@ -386,6 +585,7 @@ section {
     gap: 30px;
 }
 
+
 .btn-link {
     font-family: inherit;
     font-weight: 500;
@@ -404,6 +604,17 @@ section {
 .btn-link:focus {
     background: #2196F3;
     color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+
+.img-nav {}
+
+.img-nav-shadow:hover {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    max-width: 370px;
 }
 
 .nav-border {
